@@ -6,12 +6,14 @@
                 <AdvantageItem :advantage="advantage" />
             </div>
         </div>
-        <div class="flex">
-            <button class="border-arth-dark-blue justify-center font-tinos hover:bg-arth-dark-blue hover:text-white">
-                {{ $t("buttons.reservation") }}</button>
+        <div class="flex justify-center">
+            <router-link :to="{ name: 'reservation' }">
+                <button class="border-arth-dark-blue font-tinos hover:bg-arth-dark-blue hover:text-white">
+                    {{ $t("buttons.reservation") }}
+                </button>
+            </router-link>
         </div>
     </section>
-
 </template>
 
 <script>
